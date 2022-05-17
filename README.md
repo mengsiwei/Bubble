@@ -7,7 +7,8 @@ feature : facial expression recognition, voice interaction, emotion record
 
 # DEVELOPMENT PROCESS
 
+coming！！！
 
 # TECHNOLOGY API
 
-
+coming！！！
