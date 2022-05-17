@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    tools:context=".FirstActivity">
+
+    <ImageView
+        android:id="@+id/logo_app"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="logo"
+        android:src="@mipmap/happy_1" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logo_app"
+        android:layout_alignBottom="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="350dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="BUBBLE"
+        android:textColor="#528ff5"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_login"
+        android:text="login"
+        android:layout_alignBottom="@+id/register"
+        android:layout_marginBottom="92dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#444444"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="register"
+        android:textColor="#444444"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="244dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/edit_bubble">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="44dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_bubble_other" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="44dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/face"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="SPEED" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/jianshao" />
+
+        <SeekBar
+            android:id="@+id/seekBar_v"
+            style="@style/CustomSeekbarStyle"
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-6dp"
+            android:splitTrack="false"
+            android:max="6"
+            android:progress="3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-6dp"
+            android:gravity="center"
+            android:background="@mipmap/zengjia"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="36dp">
+
+        <TextView
+            android:id="@+id/textView_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/face"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="COLOR" />
+
+        <Button
+            android:id="@+id/bubble_color_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bubble_color_5" />
+        <Button
+            android:id="@+id/bubble_color_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="28dp"
+            android:background="@drawable/bubble_color_4" />
+        <Button
+            android:id="@+id/bubble_color_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bubble_color_1" />
+        <Button
+            android:id="@+id/bubble_color_4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bubble_color_3" />
+        <Button
+            android:id="@+id/bubble_color_5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bubble_color_2" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_bubble_finish"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="44dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:background="@drawable/eidt_bubble_start"
+        android:text="finish"
+        android:textSize="14sp"
+        android:textColor="@color/bubbleeditfinish" />
+
+</LinearLayout>

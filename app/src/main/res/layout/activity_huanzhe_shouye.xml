@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityHuanzheShouye">
+
+    <TextView
+        android:id="@+id/youtv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="91dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:text="You look like?"
+        android:textColor="@color/face"
+        android:textSize="28sp" />
+
+
+    <LinearLayout
+        android:id="@+id/facejihe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shouye_face"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView_happy"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView_surprise"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView_scare"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView_sad"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/imageView_discard"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imageView_angry"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"  />
+
+        <ImageView
+            android:id="@+id/imageView_neutral"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bubble"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/get_advice1"
+        android:layout_alignBottom="@+id/get_advice3"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="-3dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="level3.json"
+        app:lottie_imageAssetsFolder="images/"
+        app:lottie_loop="true"
+        app:lottie_repeatMode="reverse">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <FrameLayout
+        android:id="@+id/get_advice1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="88dp"
+        android:layout_alignTop="@+id/facejihe_ly"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="25dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/get_advice1_bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/get_advice1_ft_img"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/get_advice2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/facejihe_ly"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:id="@+id/get_advice2_bg_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/get_advice2_ft_img"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/yuyin1" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/get_advice3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="111dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="46dp"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/get_advice3_bg_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"  />
+
+        <TextView
+            android:id="@+id/get_advice3_ft_img"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/yuyin1"
+            android:descendantFocusability="blocksDescendants"/>
+    </FrameLayout>
+</RelativeLayout>

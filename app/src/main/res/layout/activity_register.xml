@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="100dp"
+
+        android:fontFamily="@font/roboto_medium"
+        android:text="welcome"
+        android:textColor="#528ff5"
+        android:textSize="40sp" />
+
+    <LinearLayout
+
+        android:id="@+id/re_ly"
+        android:paddingTop="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_register"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/rg_username"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/tv_login"
+            android:ems="10"
+            android:hint="username"
+
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColorHint="#aaaaaa" />
+
+        <EditText
+            android:id="@+id/rg_phonenumber"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/tv_login"
+            android:ems="10"
+
+            android:hint="phonenumber"
+            android:inputType="phone"
+
+            android:paddingLeft="20dp"
+            android:textColorHint="#aaaaaa" />
+
+        <EditText
+            android:id="@+id/rg_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/tv_login"
+            android:ems="10"
+            android:hint="password"
+
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="#aaaaaa" />
+
+        <EditText
+            android:id="@+id/rg_cpassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/tv_login"
+            android:ems="10"
+            android:hint="confirmpassword"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="#aaaaaa" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rg_register"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:text="regiter"
+        android:textColor="#444444"
+        android:textSize="18sp" />
+
+</RelativeLayout>

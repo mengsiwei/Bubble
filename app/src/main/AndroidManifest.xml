@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bubble422">
+    <uses-feature android:name="android.hardware.camera"/>
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 使用存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/bubble_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bubble422"
+        android:windowSoftInputMode="adjustPan|stateHidden">
+        <activity android:name=".SendAdviseActivity">
+        </activity>
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuideActivity" />
+        <activity android:name=".ChooseidActivity" >
+        </activity>
+        <activity android:name=".ChooseLoRActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DoctorShouyeActivity"></activity>
+        <activity android:name=".live_face"/>
+        <activity android:name=".DoctorWodeActivity"/>
+        <activity android:name=".DaohanglanActivity">
+            <meta-data
+                android:name="com.huawei.hms.ml.DEPENDENCY"
+                android:value="face"/>
+        </activity>
+        <activity android:name=".ActivityHuanzheShouye"></activity>
+        <activity android:name=".Activity_huanhze_yuyin"></activity>
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ShowWenjuanActivity" />
+        <activity android:name=".Activity_huanzhe_wode"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

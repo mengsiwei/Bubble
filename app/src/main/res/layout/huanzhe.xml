@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="86dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/huanzhe_card_bg"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/huanzhe_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@mipmap/happy_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/huanzhe_image"
+        android:layout_alignRight="@+id/huanzhe_xinqing"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:id="@+id/huanzhe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Baozai"
+            android:textColor="@color/huanzhename"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_gravity="bottom"
+                android:id="@+id/huanzhe_state"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="@drawable/huanzhe_card_state"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="well" />
+
+
+            <Button
+                android:id="@+id/huanzhe_face"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/huanzhe_card_state"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="happy" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/huanzhe_xinqing"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        android:layout_marginRight="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/sharp_point1"
+        android:text="10" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--未选中的图片-->
+    <item android:drawable="@drawable/wenjuan_btn_uns" android:state_pressed="false" />
+    <!--已选中的图片-->
+    <item android:drawable="@drawable/wenjuan_btn_s" android:state_pressed="true" />
+</selector>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:src="@drawable/g1">
+    </pl.droidsonroids.gif.GifImageView>
+    <TextView
+        android:id="@+id/guidet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="84dp"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="Record"
+        android:textColor="#444444"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/guidetd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.4"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="540dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/guidetd1"
+        android:textColor="#444444"
+        android:textSize="18sp" />
+
+</RelativeLayout>

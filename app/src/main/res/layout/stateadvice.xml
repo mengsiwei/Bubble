@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="74dp"
+    android:layout_marginRight="12dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/state_advice_img"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        app:srcCompat="@mipmap/happy_1" />
+
+    <TextView
+        android:id="@+id/state_advice_name"
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/roboto"
+        android:text="music"
+        android:gravity="center"
+        android:textColor="@color/huanzhename"
+        android:textSize="16sp" />
+
+</LinearLayout>

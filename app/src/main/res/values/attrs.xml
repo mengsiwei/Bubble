@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MutiProgress">
+        <attr name="nodesNum" format="integer"/> <!-- 节点数量 -->
+        <attr name="nodeRadius" format="dimension"/>
+        <attr name="progressingDrawable" format="reference"></attr>
+        <attr name="unprogressingDrawable" format="reference" />  <!-- 未完成的节点图标 -->
+        <attr name="progresFailDrawable" format="reference" />
+        <attr name="progresSuccDrawable" format="reference" />
+
+        <attr name="processingLineColor" format="color"></attr>
+        <attr name="currNodeNO" format="integer"></attr>   <!-- 当前所到达的节点编号  0开始计算-->
+        <attr name="currNodeState" format="integer"></attr>   <!-- 当前所到达的节点状态，0：失败  1：成功 -->
+    </declare-styleable>
+    <attr name="maxprogrss" format="integer"></attr> <!-- 最大的进度 -->
+    <attr name="curprogrss" format="integer"></attr><!-- 当前的进度 -->
+    <attr name="linelength" format="dimension"></attr><!-- 线的长度 为防止圆和线连接处有缺口，线长度为圆心之间距离 -->
+    <attr name="circlediameter" format="dimension"></attr><!-- 圆的直径 -->
+    <attr name="lineheight" format="dimension"></attr><!-- 线的高度 -->
+    <attr name="selectedcolor" format="color"></attr><!-- 当前进度颜色 -->
+    <attr name="noselectedcolor" format="color"></attr><!-- 其他颜色 -->
+    <declare-styleable name="MyProgress">
+        <attr name="maxprogrss"></attr>
+        <attr name="curprogrss"></attr>
+        <attr name="linelength"></attr>
+        <attr name="circlediameter"></attr>
+        <attr name="lineheight"></attr>
+        <attr name="selectedcolor"></attr>
+        <attr name="noselectedcolor"></attr>
+    </declare-styleable>
+</resources>
